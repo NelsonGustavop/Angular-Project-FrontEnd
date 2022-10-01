@@ -1,4 +1,12 @@
 {
     "terminal.explorerKind": "integrated",
-    "terminal.integrated.allowChords": true
+    "terminal.integrated.allowChords": true,
+    "vsintellicode.features.python.deepLearning": "enabled",
+    "vsintellicode.java.completionsEnabled": true,
+    "vsintellicode.modify.editor.suggestSelection": "enabled",
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on"
+    },
+    "angular.suggest.includeAutomaticOptionalChainCompletions": false
 }
