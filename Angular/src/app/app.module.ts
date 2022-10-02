@@ -32,6 +32,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { LoginComponent } from './components/login/login.component';
+import { ToastrModule } from 'ngx-toastr';
 
 
 
@@ -72,7 +73,13 @@ import { LoginComponent } from './components/login/login.component';
     MatCardModule,
     MatInputModule,
     MatIconModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    ToastrModule.forRoot({
+      timeOut:4000,
+      closeButton: true,
+      progressBar: true
+
+  })
   ],
   providers: [],
   bootstrap: [AppComponent]
