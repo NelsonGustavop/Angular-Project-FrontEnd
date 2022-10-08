@@ -6,7 +6,7 @@ import { Credenciais } from '../models/Credenciais';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class  AuthService {
 
   jwtService:JwtHelperService = new JwtHelperService();
 
@@ -28,5 +28,8 @@ export class AuthService {
       return !this.jwtService.isTokenExpired(token)
     }
     return false
+   }
+   logout(){
+    localStorage.clear();
    }
 }
