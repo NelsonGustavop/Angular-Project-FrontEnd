@@ -3,7 +3,7 @@ import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Credenciais } from "src/app/models/Credenciais";
-import { AuthService } from 'src/app/serices/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -24,7 +24,6 @@ export class LoginComponent implements OnInit {
     private router: Router){}
   ngOnInit(): void {
   }
-
    logar() {
     this.service.authenticate(this.creds).subscribe(resposta =>{
       this.toast.info(resposta.headers.get('Authorization'))
@@ -33,13 +32,11 @@ export class LoginComponent implements OnInit {
     },()=> {
       this.toast.error('Usuario e/ou senha inválidos');
     })
+    
    }
    validaCampos():boolean{
     return this.email.valid && this.senha.valid
-  
    }
-
-   
   }
     
       

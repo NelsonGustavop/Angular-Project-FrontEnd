@@ -12,10 +12,10 @@ export class TecnicoListComponent implements OnInit {
   ELEMENT_DATA:Tecnico[] = [
     {
       id:1,
-      name:'Nelson Yeger',
-      cpf: '321.456.654-23',
-      email:'nelsonYeger@gmail.com',
-      senha:'nelson1234',
+      name:'Valdir Cezar',
+      cpf: '550.482.150-95',
+      email:'valdir@mail.com',
+      senha:'123',
       perfis:['0'],
       dataCriacao:'26/10/2004'
     }
