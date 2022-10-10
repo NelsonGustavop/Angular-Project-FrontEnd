@@ -12,8 +12,8 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent implements OnInit {
   creds: Credenciais = {
-    email:'',
-    senha:''
+    email: 'stallman@mail.com',
+    senha: '123'
   }
   email = new FormControl(null, Validators.email);
   senha = new FormControl(null, Validators.minLength(3));
@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
     private  toast: ToastrService,
     private service:AuthService,
     private router: Router){}
+
   ngOnInit(): void {
   }
    logar() {
