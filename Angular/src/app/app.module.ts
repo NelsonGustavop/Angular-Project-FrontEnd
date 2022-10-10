@@ -39,6 +39,7 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -80,9 +81,9 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     ToastrModule.forRoot({
       timeOut:4000,
       closeButton: true,
-      progressBar: true
-      
-  })
+      progressBar: true  
+  }),
+  
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
